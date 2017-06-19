@@ -1,6 +1,5 @@
 config/auth.js
 node_modules
-config/development.json
 public
 .DS_Store
 *.sublime-workspace
