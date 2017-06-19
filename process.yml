@@ -1,0 +1,7 @@
+apps:
+  - script   : 'appNode.js'
+    name     : 'APP'
+    watch : true
+
+    env:
+    -NODE_ENV: 'production'

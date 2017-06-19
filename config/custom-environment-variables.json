@@ -1,0 +1,35 @@
+{
+  "database": {
+    "host": "DATABASE_HOSTNAME",
+    "scheme": "DATABASE_SCHEME",
+    "database": "DATABASE_DATABASE",
+    "user": "DATABASE_USER",
+    "pass": "DATABASE_PASS"
+  },
+
+  "ssl": {
+    "path": "APPLICATION_SSL_DIR",
+    "certificate": "APPLICATION_SSL_CERT",
+    "key": "APPLICATION_SSL_KEY"
+  },
+
+  "server": {
+    "port": "APPLICATION_LISTEN_PORT",
+    "iface": "APPLICATION_LISTEN_IFACE",
+    "hostname": "HOSTNAME"
+  },
+
+  "mail": {
+    "sendGridKey": "MAIL_SEND_GRID_KEY"
+  },
+
+  "content": {
+    "path": "APPLICATION_CONTENT_DIR"
+  },
+
+  "log": {
+    "path": "APPLICATION_LOG_DIR"
+  },
+
+  "secret": "SECRET"
+}

@@ -1,0 +1,28 @@
+{
+  "database": {
+    "host": "ds131512.mlab.com",
+    "port": 31512,
+    "scheme": "mongodb",
+    "database": "info-streaming",
+    "user":"dragos",
+    "pass":"dragos"
+  },
+  "log": {
+    "path": "./",
+    "access": "access.log",
+    "error": "error.log"
+  },
+  "content": {
+    "path": "./public"
+  },
+  "server": {
+    "port": 3000,
+    "iface": "0.0.0.0",
+    "hostname": "localhost"
+  },
+  "mail": {
+    "sendGridKey": "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"
+  },
+  "secret": "-umrs##3diurj9849898c98cr2do2+h1)#puo(y@rj2t!_(=o#3w&gl",
+  "expiresIn": "604800"
+}
