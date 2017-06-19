@@ -16,7 +16,7 @@ class AuthController {
 
   register(req, res) {
     let username = req.body.username;
-    let email = req.body.username;
+    let email = req.body.email;
     let password = req.body.password;
     this.authService.register(username, email, password).then(user => {
 

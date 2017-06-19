@@ -15,10 +15,10 @@ const Promise = require('bluebird');
  * @type {Schema}
  */
 const UserSchema = new Schema({
-  username: {type: String, unique: true},
+  username: {type: String},
   firstName: String,
   lastName: String,
-  email: {type: String, required: true, unique: true},
+  email: {type: String},
   password: {type: String},
   confirmationCode: String,
   confirmed: {type: Boolean, default: false},
