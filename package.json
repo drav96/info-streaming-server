@@ -59,9 +59,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha",
-    "production": "NODE_ENV=production node ./appNode.js",
-    "development": "NODE_ENV=development node ./appNode.js"
+    "start": "node ./appNode.js"
   },
   "keywords": [
     "git",
