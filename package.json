@@ -1,38 +1,27 @@
 {
-  "name": "sm_calendar",
+  "name": "node",
   "version": "1.0.0",
-  "main": "appNode.js",
+  "description": "#### Running the Node Backend app",
+  "main": ".eslintrc.js",
   "dependencies": {
     "async": "2.1.5",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "3.5.0",
     "body-parser": "1.17.1",
-    "cheerio": "^0.22.0",
-    "config": "~1.25.1",
-    "cookie-parser": "1.4.3",
-    "cors": "2.8.3",
     "cron": "1.2.1",
-    "easyimage": "^2.1.0",
+    "cors": "2.8.3",
+    "eslint": "3.17.1",
+    "eslint-config-airbnb-base": "11.1.1",
     "express": "4.15.2",
-    "express-validator": "3.1.2",
-    "fb": "^1.1.1",
-    "ffprobe": "^1.1.0",
-    "fluent-ffmpeg": "^2.1.0",
     "fs-extra": "2.1.2",
     "helmet": "3.5.0",
-    "image-downloader": "2.0.3",
-    "jsonwebtoken": "7.3.0",
-    "mkdirp": "^0.5.1",
-    "mongodb-backup": "1.6.9",
+    "html-pdf": "2.1.0",
+    "json": "9.0.6",
+    "moment": "2.17.1",
     "mongodb-migrations": "0.8.5",
+    "mongodb-backup": "1.6.9",
     "mongoose": "4.8.6",
-    "mongoose-paginate": "^5.0.3",
-    "mongoose-sanitizer": "1.0.0",
-    "mongoose-validators": "^0.1.0",
-    "morgan": "1.8.1",
-    "multer": "1.3.0",
     "nodemailer": "3.1.5",
-    "nodemailer-sendgrid-transport": "^0.2.0",
     "ok.ru": "1.2.0",
     "passport": "0.3.2",
     "passport-facebook": "2.1.1",
@@ -40,39 +29,13 @@
     "passport-jwt": "2.2.1",
     "passport-local": "1.0.0",
     "request": "2.81.0",
-    "url": "0.11.0",
-    "winston": "^2.3.1"
+    "rimraf": "2.6.1",
+    "url": "0.11.0"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "3.17.1",
-    "eslint-config-airbnb": "14.1.0",
-    "eslint-config-airbnb-base": "11.1.1",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "4.0.0",
-    "eslint-plugin-react": "6.10.0",
-    "mocha": "^3.2.0",
-    "unit.js": "^2.0.0"
-  },
-  "description": "Social Media calendar",
-  "directories": {
-    "test": "test"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node ./appNode.js"
+    "test": "mocha"
   },
-  "keywords": [
-    "git",
-    "repository"
-  ],
-  "author": "SensMedia",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/sensmedia/SM_Calendar.git"
-  },
-  "bugs": {
-    "url": "https://gitlab.com/sensmedia/SM_Calendar/issues"
-  },
-  "homepage": "https://gitlab.com/sensmedia/SM_Calendar#README"
+  "author": "",
+  "license": "ISC"
 }

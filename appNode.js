@@ -83,7 +83,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 //===========================Server bootup======================================
 db.once('open', () => {
 	let server = http.createServer(app);
-	server.listen(config.get('server.port'), () => {
+	server.listen(3000, () => {
 		console.log(`====== SM Calendar Server is listening on host: ${config.get('server.hostname')} and port: ${config.get('server.port')} ======`);
 		console.log('Date: ' + new Date());
 		console.log(`Environment: ${app.get('env') }`);
