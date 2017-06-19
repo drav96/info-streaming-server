@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(expressValidator());
 app.use(cookieParser());
-
+app.set('port', (process.env.PORT || 5000));
 //===========================Access log configuration===========================
 const accessLogStream = fs.createWriteStream(path.join(config.get('log.path'), 'access.log'), {flags: 'a'});
 if (app.get('env') === 'production') {
@@ -79,14 +79,11 @@ mongoose.connect(dbDSN);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-
+var port=process.env.PORT
 //===========================Server bootup======================================
 db.once('open', () => {
-	let server = http.createServer(app);
-	server.listen(3000, () => {
-		console.log(`====== SM Calendar Server is listening on host: ${config.get('server.hostname')} and port: ${config.get('server.port')} ======`);
-		console.log('Date: ' + new Date());
-		console.log(`Environment: ${app.get('env') }`);
+	app.listen(app.get('port'), function() {
+		console.log('Node app is running on port', app.get('port'));
 	});
 
 });
