@@ -1,0 +1,11 @@
+{
+  "database": {
+    "host": "ds131512.mlab.com",
+    "port": 31512,
+    "scheme": "mongodb",
+    "database": "info-streaming",
+    "user":"dragos",
+    "pass":"dragos"
+  },
+  "secret": "-umrs##3diurj9849898c98cr2do2+h1)#puo(y@rj2t!_(=o#3w&gl"
+}
